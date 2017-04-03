@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: April3Spinosaurus2.ma
-//Last modified: Mon, Apr 03, 2017 01:17:56 PM
+//Last modified: Mon, Apr 03, 2017 03:17:27 PM
 //Codeset: 1252
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,19 +13,19 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "6179314E-4E43-C85F-2DCA-78A6B44CFFE9";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 6.9356462159687569 0.66928149224468714 0.68738326369059732 ;
-	setAttr ".r" -type "double3" -3.8041985153624043 2245.3999999966368 -9.9145802320893117e-015 ;
+	setAttr ".t" -type "double3" -7.9494272785160387 -0.65560704959351868 -0.025954818481380926 ;
+	setAttr ".r" -type "double3" -4.4041985152626726 2422.999999995603 0 ;
 	setAttr ".rp" -type "double3" 2.2204460492503131e-016 -5.5511151231257827e-017 2.2204460492503131e-016 ;
 	setAttr ".rpt" -type "double3" 9.6842428996684761e-017 5.5383141353102618e-017 -2.2166477110947505e-016 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "EB5D9792-4DB5-D315-0DE9-368E10301048";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999993;
-	setAttr ".coi" 6.9359776042783414;
+	setAttr ".coi" 7.8431992042449643;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
-	setAttr ".tp" -type "double3" 0.26752630621194839 0.67733407020568848 0.20552441477775574 ;
+	setAttr ".tp" -type "double3" 0.030493049100495481 2.0164346078959428 1.1436750292778015 ;
 	setAttr ".hc" -type "string" "viewSet -p %camera";
 createNode transform -s -n "top";
 	rename -uid "3DA25A0F-4C34-28DF-F20B-F28D5782C906";
@@ -6481,6 +6481,7 @@ createNode transform -n "R_Sail_Top";
 createNode mesh -n "R_Sail_TopShape" -p "R_Sail_Top";
 	rename -uid "C5088B5F-42EC-7BAE-AA11-AF87DB85FB11";
 	setAttr -k off ".v";
+	setAttr -s 2 ".iog[0].og";
 	setAttr ".iog[0].og[0].gcl" -type "componentList" 1 "f[0:169]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
