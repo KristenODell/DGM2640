@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Spinosaurus State Machine.unity
+- path: Assets/Scenes/Spinosaurus State Machine.unity
   isLoaded: 1
   isActive: 1
